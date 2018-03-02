@@ -31,8 +31,8 @@ namespace FunctionApp
                             type = "PlainText",
                             text = "Hallo, herzlich Willkommen bei H P E. Wie kann ich dir helfen?"
                         }
-                    }
-
+                    },
+                    shouldEndSession = false
 
                 });
 
