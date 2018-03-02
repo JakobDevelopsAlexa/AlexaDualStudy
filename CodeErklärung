@@ -1,1 +1,165 @@
+using Microsoft.Azure.WebJobs;
+using Microsoft.Azure.WebJobs.Extensions.Http;
+using Microsoft.Azure.WebJobs.Host;
+using System;
+using System.Net;
+using System.Net.Http;
+using System.Threading.Tasks;
+namespace FunctionApp
+{
+    public static class AddFunction
+    {
+        [FunctionName("FunctionAlexa1")]
+        public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)]HttpRequestMessage req, TraceWriter log)
+        {
+            // Simple Function
+            // Get request body
+            dynamic data = await req.Content.ReadAsAsync<object>();
+            log.Info($"Content={data}");
+            if (data.request.type == "LaunchRequest")
+            {
+                // default launch request, let's just let them know what you can do
+                log.Info($"Default LaunchRequest made");
+                return req.CreateResponse(HttpStatusCode.OK, new
+                {
+                    version = "1.0",
+                    sessionAttributes = new { },
+                    response = new
+                    {
+                        outputSpeech = new
+                        {
+                            type = "PlainText",
+                            text = "Hallo, herzlich Willkommen bei H P E. Wie kann ich dir helfen?"
+                        }
+                    },
+                    shouldEndSession = false
 
+                });
+
+             }
+             
+             //Erklärung: Dies ist der Lunch-Request. Wenn man sagt “Alexa, starte die Alliance“, 
+             
+             gibt Alexa "Hallo, herzlich Willkommen bei H P E. Wie kann ich dir helfen?"  aus. 
+             
+             Diesen kannst du beliebig abändern. 
+
+
+            else if (data.request.type == "IntentRequest")
+            {
+                // Set name to query string or body data
+                string intentName = data.request.intent.name;
+                log.Info($"intentName={intentName}");
+                switch (intentName)
+                {
+                    case "GetInfoIntent":
+
+                        return req.CreateResponse(HttpStatusCode.OK, new
+                        {
+                            version = "1.0",
+                            sessionAttributes = new { },
+                            response = new
+                            {
+                                outputSpeech = new
+                                {
+                                    type = "PlainText",
+                                    text = $"Dein Studium ist unterteilt in Theorie- und Praxisphasen. Die Theoriephase verbringst du an der dualen Hochschule. Die Praxisphase bei uns im Unternehmen. Möchtest du sonst noch etwas wissen?"
+                                },
+                                card = new
+                                {
+                                    type = "Simple",
+                                    title = "HPE Duales Studium - App Edition",
+                                    content = $"Das duale Studium besteht aus zwei Teilen. Praxis und Theorie."
+                                },
+                                shouldEndSession = false
+                            }
+                        });
+
+                //  Erklärung: Hier habe ich festgelegt, was Alexa antwortet, wenn der Intent GetInfoIntent aufgerufen wird. 
+                
+                Der Intent und seine Utterrances wurden auf der Developer-Plattform angelegt. Wenn du dich fragst,
+                
+                was unter card = new ausgegeben wird: Das wird in der Alexa-App angezeigt. 
+                
+                Ich verwende hier eine gekürzte Antwort dessen, was Alexa sagt. Wichtig ist, dass shouldEndSession = false ist,
+                
+                denn wir wollen, das die Session offen bleibt. Somit müssen wir jetzt nicht mehr „Alexa, frage die Alliance" sagen, 
+                
+                sondern können direkt unsere Frage stellen. Die erste Frage muss aber nach dem Schema: „Alexa, frage die Alliance, 
+                
+                ob ich auch ins Ausland kann.“ gestellt werden. 
+
+        
+
+
+                    case "AMAZON.StopIntent":
+
+                        return req.CreateResponse(HttpStatusCode.OK, new
+                        {
+                            version = "1.0",
+                            sessionAttributes = new { },
+                            response = new
+                            {
+                                outputSpeech = new
+                                {
+                                    type = "PlainText",
+                                    text = $"Bis bald mein junger Padawan."
+                                },
+                                card = new
+                                {
+                                    type = "Simple",
+                                    title = "HPE Duales Studium - App Edition",
+                                    content = $"Auf Wiedersehen."
+                                },
+                                shouldEndSession = true
+                            }
+                        });
+                        
+                        
+                      //  Erklärung: Dies ist der Stop-Intent. Wenn man zum Beispiel „Stop“ oder „Danke“ sagt, wird die Session beendet.
+                      
+                     //   Deshalb ist shouldEndSession = true. 
+                        
+                    default:
+                        return DefaultRequest(req);
+                }
+            }
+            else
+            {
+                return DefaultRequest(req);
+            }
+        }
+        private static HttpResponseMessage DefaultRequest(HttpRequestMessage req)
+        {
+            return req.CreateResponse(HttpStatusCode.OK, new
+            {
+                version = "1.0",
+                sessionAttributes = new { },
+                response = new
+                {
+                    outputSpeech = new
+                    {
+                        type = "PlainText",
+                        text = "Hmmm, das habe ich nicht verstanden. Wiederhole doch deine Frage nochmal oder wende dich an den äußerst kompetenten Messemitarbeiter."
+                    },
+                    card = new
+                    {
+                        type = "Simple",
+                        title = "HPE Duales Studium - App Edition",
+                        content = "Das habe ich nicht verstanden."
+                    },
+                    shouldEndSession = false
+                }
+            });
+        }
+    }
+}
+//Erklärung: Dies ist der Default-Intent. Dieser wird ausgelöst, wenn Alexa mal etwas nicht versteht. 
+
+Dazu muss auch ein Default-Intent auf der Developer-Plattform angelegt werden.
+
+Dieser muss ganz unten im Intent-Schema stehen. Deshalb sollte der Intentname zum Beispiel mit einem Z anfangen,
+
+es müssen zudem keine Utterances festgelegt werden. Der Intent muss auch selbst im Code als Intent nicht angegeben werden, 
+
+da er automatisch ausgelöst wird, wenn Alexa nicht verstanden hat. 
