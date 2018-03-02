@@ -1,8 +1,10 @@
 # AlexaDualStudy
 
 Alexa – How to create a Skill with with Azure & Visual Studio - Jakob Wiemer 
+
  
 1. Azure aufsetzen und Visual Studio installieren 
+
 
 Schritt 1: Microsoft-Azure Account anlegen  
 
@@ -33,6 +35,7 @@ Schritt 13: Microsoft Azure Website besuchen und in der Liste auf der linken Sei
 Schritt 14: Angelegte Funktion anklicken und die Funktions-URL abrufen und kopieren 
  
 2. Amazon Developer Skill anlegen 
+
 Wie man einen Skill anlegt, wird auf der Amazon-Developer-Plattform deutlich, dieses Schritt sparen wir hier. Das Einzige, was hier einer Erklärung berdarf, ist der Schritt Configuration. Hier muss HTTPS ausgewählt werden. Die eben kopierte Funktions-URL muss in den Kasten Default eingefügt werden. Nun haben wir unseren Endpoint. Zwei weitere wichtige Tipps: Beim SSL-Zertifikat muss die zweite Option ausgewählt werden: 
 
 My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority 
@@ -40,4 +43,5 @@ My development endpoint is a sub-domain of a domain that has a wildcard certific
 Um den Skill zu testen, muss die Test-Funktion enabled sein. Melde dich mit deinem DeveloperAccount in der Alexa-App an, verbinde ein beliebiges Alexa-Gerät, gehe auf Skill -> Meine Skills -> Aktivieren. Nun sollte der Skill, den wir im nächsten Schritt anlegen, angezeigt werden. 
  
 3. Code in Visual Studio Allgemeines
+
 Der nachfolgende Code kann verwendet werden, um einen beliebigen Frage-Antwort-Skill zu erstellen. Diesen habe ich ebenfalls genutzt, um Alexa für den DualStudy Messestand zu programmieren. Damit der Skill funktioniert, muss er einerseits auf der Developerplattform, andererseits in Visual Studio programmiert werden. Einen Skill stelle man sich vor wie eine Kiste, in der die sogenannten Intents drin sind, welche Antworten von Alexa auslösen. Diese Antworten legen wir in Visual Studio fest, die Intents auf der Developer-Plattform. Die Kiste öffnet man mit dem Invocation-Name. Beispiel: Alexa, frage das duale Studium, wie lange das Studium dauert. Wenn man einen Intent anlegt, zum Beispiel GetStudiumDauer, muss man auch verschiedene Utterances festlegen. Dies sind verschiedene Formulierungen ein und der selben Frage oder Aufforderung. Damit Alexa den User im besten Fall immer versteht, sollten zu einem Intent mindestens 20-30 Utterances festgelegt werden. Nun verlassen wir die Developer-Plattform und witmen uns Visual Studio. 
