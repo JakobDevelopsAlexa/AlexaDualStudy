@@ -3,19 +3,33 @@
 Alexa – How to create a Skill with with Azure & Visual Studio - Jakob Wiemer 
  
 1. Azure aufsetzen und Visual Studio installieren 
+
 Schritt 1: Microsoft-Azure Account anlegen  
+
 Schritt 2: Benötigtes Abonnement abschließen (HPE verfügt über alle benötigten Abonnements) 
+
 Schritt 3: Microsoft Visual Studio 2017 Community installieren 
+
 Schritt 4: Im Launcher von Visual Studio „modify“ anklicken und das aufgelistete Azure-Packet installieren (das kann eine Weile dauern) 
+
 Schritt 5: Ein neues Projekt anlegen 
+
 Schritt 6: Im Solution Explorer Rechtklick auf das Projekt -> Add New Item 
+
 Schritt 7: Im Popup-Fenster Azure-Funktion auswählen
+
 Schritt 8: Ein neues Fenster öffnet sich -> HTTP Trigger auswählen 
+
 Schritt 9: Im selben Fenster auf der rechten Seite statt Function -> Anonymos auswählen 
+
 Schritt 10: Erneuter Rechtsklick auf das Projekt -> Publish 
+
 Schritt 11: Create anklicken 
+
 Schritt 12: Keine weiteren Einstellungen notwendig, werden bei Abonnement automatisch ausgefüllt, Name kann geändert werden, anschließend auf publish klicken 
+
 Schritt 13: Microsoft Azure Website besuchen und in der Liste auf der linken Seite Azure Function anklicken, nun sollte die in Visual Studio angelegte Azure-Funktion dort angezeigt werden 
+
 Schritt 14: Angelegte Funktion anklicken und die Funktions-URL abrufen und kopieren 
  
 2. Amazon Developer Skill anlegen 
