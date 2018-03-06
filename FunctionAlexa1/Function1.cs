@@ -30,9 +30,10 @@ namespace FunctionApp
                         {
                             type = "PlainText",
                             text = "Hallo, herzlich Willkommen bei H P E. Wie kann ich dir helfen?"
-                        }
-                    },
-                    shouldEndSession = false
+                        },
+                        shouldEndSession = false
+                    }
+
 
                 });
 
@@ -57,7 +58,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Dein Studium ist unterteilt in Theorie- und Praxisphasen. Die Theoriephase verbringst du an der dualen Hochschule. Die Praxisphase bei uns im Unternehmen. MÃ¶chtest du sonst noch etwas wissen?"
+                                    text = $"Dein Studium ist unterteilt in Theorie- und Praxisphasen. Die Theoriephase verbringst du an der dualen Hochschule. Die Praxisphase bei uns im Unternehmen. Möchtest du sonst noch etwas wissen?"
                                 },
                                 card = new
                                 {
@@ -68,6 +69,8 @@ namespace FunctionApp
                                 shouldEndSession = false
                             }
                         });
+
+                
 
                   
 
@@ -82,13 +85,13 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Okay. Frag mich doch, welche StudiengÃ¤nge es gibt, wo du die Theoriephase verbringst, wie lange das Studium dauert oder ob du einen Master machen kannst."
+                                    text = $"Okay. Frag mich doch, welche Studiengänge es gibt, wo du die Theoriephase verbringst, wie lange das Studium dauert oder ob du einen Master machen kannst."
                                 },
                                 card = new
                                 {
                                     type = "Simple",
                                     title = "HPE Duales Studium - App Edition",
-                                    content = $"MÃ¶gliche Fragen zur Theorie lauten:"
+                                    content = $"Mögliche Fragen zur Theorie lauten:"
                                 },
                                 shouldEndSession = false
                             }
@@ -105,13 +108,13 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Okay. Du kannst mich fragen bei welchen Unternehmen du PraxiseinsÃ¤tze machen kannst, ob es Geld gibt, was bei H P E so besonders ist, wie du dich bewirbst oder ob du ins Ausland kannst. "
+                                    text = $"Okay. Du kannst mich fragen bei welchen Unternehmen du Praxiseinsätze machen kannst, ob es Geld gibt, was bei H P E so besonders ist, wie du dich bewirbst oder ob du ins Ausland kannst. "
                                 },
                                 card = new
                                 {
                                     type = "Simple",
                                     title = "HPE Duales Studium - App Edition",
-                                    content = $"MÃ¶gliche Fragen zur Praxis lauten:"
+                                    content = $"Mögliche Fragen zur Praxis lauten:"
                                 },
                                 shouldEndSession = false
                             }
@@ -152,13 +155,13 @@ namespace FunctionApp
                                  outputSpeech = new
                                  {
                                      type = "PlainText",
-                                     text = $"Deine Praxisphasen kannst du bei H P E oder einem der kooperierenden Partnerunternehmen wie D X C, H P Inc, Aruba Networks, Mikro Fokus oder auch San Data machen. Wenn du mehr Ã¼ber ein Unternehmen erfahren mÃ¶chtest, sage: was passiert bei Punkt punkt punkt?"
+                                     text = $"Deine Praxisphasen kannst du bei H P E oder einem der kooperierenden Partnerunternehmen wie D X C, H P Inc, Aruba Networks, Mikro Fokus oder auch San Data machen. Wenn du mehr über ein Unternehmen erfahren möchtest, sage: was passiert bei Punkt punkt punkt?"
                                  },
                                  card = new
                                  {
                                      type = "Simple",
                                      title = "HPE Duales Studium - App Edition",
-                                     content = $"Bei HPE und seinen Partnern kannst du PraxiseinsÃ¤tze machen."
+                                     content = $"Bei HPE und seinen Partnern kannst du Praxiseinsätze machen."
                                  },
                                  shouldEndSession = false
                              }
@@ -175,7 +178,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"H P Inc. ist einer der weltgrÃ¶ÃŸten P C und Druckerhersteller. Hast du sonst noch Fragen?"
+                                    text = $"H P Inc. ist einer der weltgrößten P C und Druckerhersteller. Hast du sonst noch Fragen?"
                                 },
                                 card = new
                                 {
@@ -198,7 +201,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"H P E ist einer der weltgrÃ¶ÃŸten Hersteller fÃ¼r Serverhardware. Diese wird vor allem im geschÃ¤ftlichen Rahmen von GroÃŸkunden eingesetzt. Willst du noch etwas wissen?"
+                                    text = $"H P E ist einer der weltgrößten Hersteller für Serverhardware. Diese wird vor allem im geschäftlichen Rahmen von Großkunden eingesetzt. Willst du noch etwas wissen?"
                                 },
                                 card = new
                                 {
@@ -244,7 +247,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Micro Focus ist einer der grÃ¶ÃŸten Software Hersteller der Welt. Hier wird Software hergestellt, welche das tÃ¤gliche GeschÃ¤ft von Unternehmen unterstÃ¼tzt. Fragst du dich sonst noch etwas?"
+                                    text = $"Micro Focus ist einer der größten Software Hersteller der Welt. Hier wird Software hergestellt, welche das tägliche Geschäft von Unternehmen unterstützt. Fragst du dich sonst noch etwas?"
                                 },
                                 card = new
                                 {
@@ -267,7 +270,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"SanData ist ein Ei Tii Beratungsunternehmen und unterstÃ¼tzt Unternehmen bei der Planung, Umsetzung und Wartung ihrer Ei Tii Infrastruktur. Willst du noch mehr wissen?"
+                                    text = $"SanData ist ein Ei Tii Beratungsunternehmen und unterstützt Unternehmen bei der Planung, Umsetzung und Wartung ihrer Ei Tii Infrastruktur. Willst du noch mehr wissen?"
                                 },
                                 card = new
                                 {
@@ -290,7 +293,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Aruba Networks sorgt zum Beispiel dafÃ¼r, dass du bei Starbucks W-Lan hast. Alles rund um Netzwerktechnik. Hast du sonst noch eine Frage?"
+                                    text = $"Aruba Networks sorgt zum Beispiel dafür, dass du bei Starbucks W-Lan hast. Alles rund um Netzwerktechnik. Hast du sonst noch eine Frage?"
                                 },
                                 card = new
                                 {
@@ -313,13 +316,13 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Sehr gut. Das DualStudy Universum ist riesig. Dein Studium besteht aus Theorie und Praxisteilen. MÃ¶chtest du zuerst etwas Ã¼ber die Theorie oder die Praxis erfahren?"
+                                    text = $"Sehr gut. Das DualStudy Universum ist riesig. Dein Studium besteht aus Theorie und Praxisteilen. Möchtest du zuerst etwas über die Theorie oder die Praxis erfahren?"
                                 },
                                 card = new
                                 {
                                     type = "Simple",
                                     title = "HPE Duales Studium - App Edition",
-                                    content = $"Hier deine MÃ¶glichekiten."
+                                    content = $"Hier deine Möglichekiten."
                                 },
                                 shouldEndSession = false
                             }
@@ -336,13 +339,13 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Du kann mich zum Beispiel fragen, welche studiengÃ¤nge es gibt, bei welchen unternehmen du praxisphasen machen kannst, wie schwer die klausuren sind oder welche vorkenntnisse man fÃ¼r das studium braucht."
+                                    text = $"Du kannst mich zum Beispiel fragen, welche studiengänge es gibt, bei welchen unternehmen du praxisphasen machen kannst, wie schwer die klausuren sind oder welche vorkenntnisse man für das studium braucht."
                                 },
                                 card = new
                                 {
                                     type = "Simple",
                                     title = "HPE Duales Studium - App Edition",
-                                    content = $"Frage mich, welche StudiengÃ¤nge es gibt oder wie du dich bewerben kannst"
+                                    content = $"Frage mich, welche Studiengänge es gibt oder wie du dich bewerben kannst"
                                 },
                                 shouldEndSession = false
                             }
@@ -359,7 +362,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Du wirst die Theoriephase an der d h b w verbringen, der dualen hochschule baden wÃ¼rttemberg. Hast du sonst noch Fragen?"
+                                    text = $"Du wirst die Theoriephase an der d h b w verbringen, der dualen hochschule baden württemberg. Hast du sonst noch Fragen?"
                                 },
                                 card = new
                                 {
@@ -403,7 +406,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Ganz einfach, keines von beidem. Es heiÃŸt nÃ¤mlich Eierpfannkuchen."
+                                    text = $"Ganz einfach, keines von beidem. Es heißt nämlich Eierpfannkuchen."
                                 },
                                 card = new
                                 {
@@ -425,13 +428,13 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Im ersten Studienjahr verdienst du 925 Euro pro Monat. Du wirst flÃ¼ssiger sein als ein Glas Wasser. Willst du noch etwas wissen?"
+                                    text = $"Im ersten Studienjahr verdienst du 925 Euro pro Monat. Du wirst flüssiger sein als ein Glas Wasser. Willst du noch etwas wissen?"
                                 },
                                 card = new
                                 {
                                     type = "Simple",
                                     title = "HPE Duales Studium - App Edition",
-                                    content = $"Klar bekommst du grÃ¼ne Scheine."
+                                    content = $"Klar bekommst du grüne Scheine."
                                 },
                                 shouldEndSession = false
                             }
@@ -447,7 +450,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Es gibt Informatik und Wirtschaftsinformatik. Bei Wirtschaftsinformatik kannst du wÃ¤hlen zwischen: IMBIT, International Management for business and Ei Tii. S C, Sales and Consulting. A M, Application Management. S E, Software Engineering und D S, Data Science. Wenn du fragen zu einem Studiengang hast, sage: Was ist PUNKT PUNKT PUNKT? "
+                                    text = $"Es gibt Informatik und Wirtschaftsinformatik. Bei Wirtschaftsinformatik kannst du wählen zwischen: IMBIT, International Management for business and Ei Tii. S C, Sales and Consulting. A M, Application Management. S E, Software Engineering und D S, Data Science. Wenn du fragen zu einem Studiengang hast, sage: Was ist PUNKT PUNKT PUNKT? "
                                 },
                                 card = new
                                 {
@@ -469,7 +472,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"International Management for business and Ei Tii legt den Grundstein fÃ¼r deine Karriere in einem Weltkonzern und konzentriert sich dabei auf Kundenprojekte und die enge Zusammenarbeit internationaler Bereiche."
+                                    text = $"International Management for business and Ei Tii legt den Grundstein für deine Karriere in einem Weltkonzern und konzentriert sich dabei auf Kundenprojekte und die enge Zusammenarbeit internationaler Bereiche."
                                 },
                                 card = new
                                 {
@@ -535,7 +538,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Schwerpunkte beim Informatik Studium sind modernste Software-Entwicklungsmethoden und Programmiersprachen, Software Engineering, Internet-, Netzwerk- und Datenbanktechnologien, kÃ¼nstliche Intelligenz, aber auch Marketing, Vertrieb, Projektmanagement und Recht."
+                                    text = $"Schwerpunkte beim Informatik Studium sind modernste Software-Entwicklungsmethoden und Programmiersprachen, Software Engineering, Internet-, Netzwerk- und Datenbanktechnologien, künstliche Intelligenz, aber auch Marketing, Vertrieb, Projektmanagement und Recht."
                                 },
                                 card = new
                                 {
@@ -557,7 +560,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"50% Betriebswirtschaft und 50% Ei Tii â€“ mit Fokus auf Kunden und LÃ¶sungen in Ei Tii-Projekten. Genau das Richtige, wenn dir Informatik zu technisch, und Wirtschaftsinformatik zu betriebswirtschaftlich ist."
+                                    text = $"50% Betriebswirtschaft und 50% Ei Tii – mit Fokus auf Kunden und Lösungen in Ei Tii-Projekten. Genau das Richtige, wenn dir Informatik zu technisch, und Wirtschaftsinformatik zu betriebswirtschaftlich ist."
                                 },
                                 card = new
                                 {
@@ -579,7 +582,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Na klar. Jeder Student der Bock auf das Ausland hat, wird sogar zusÃ¤tzlich von uns finanziell unterstÃ¼tzt. Frage mich doch, wo du Ã¼berall hin kannst!"
+                                    text = $"Na klar. Jeder Student der Bock auf das Ausland hat, wird sogar zusätzlich von uns finanziell unterstützt. Frage mich doch, wo du überall hin kannst!"
                                 },
                                 card = new
                                 {
@@ -602,13 +605,13 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Du kannst zum Beispiel nach Palo Alto in den USA. Wir und unsere Partner haben Ã¼berall auf der Welt Standorte, bei welchen du PraxiseinsÃ¤tze machen kannst. Auch wÃ¤hrend der Theorie kannst du im Ausland auf Partnerhochschulen studieren, egal ob Australien, U S A, Finnland oder Singnapur. Hast du noch mehr Fragen fÃ¼r mich?"
+                                    text = $"Du kannst zum Beispiel nach Palo Alto in den USA. Wir und unsere Partner haben überall auf der Welt Standorte, bei welchen du Praxiseinsätze machen kannst. Auch während der Theorie kannst du im Ausland auf Partnerhochschulen studieren, egal ob Australien, U S A, Finnland oder Singnapur. Hast du noch mehr Fragen für mich?"
                                 },
                                 card = new
                                 {
                                     type = "Simple",
                                     title = "HPE Duales Studium - App Edition",
-                                    content = $"Es gibt Ã¼berall Standorte auf der Welt. USA oder Finnland, such dir was aus!"
+                                    content = $"Es gibt überall Standorte auf der Welt. USA oder Finnland, such dir was aus!"
                                 },
                                 shouldEndSession = false
                             }
@@ -623,7 +626,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Das ist ganz einfach. Du schickst uns deine Bewerbungsunterlagen einfach per Mail zu. Wir laden dich zu einem Bewerbertag ein, wenn uns deine Bewerbung gefÃ¤llt. Wenn du uns dort Ã¼berzeugst und dein Interesse an H P E zeigst, bekommst du von uns wenig spÃ¤ter eine Zusage. MÃ¶chtest du vielleicht noch etwas wissen?"
+                                    text = $"Das ist ganz einfach. Du schickst uns deine Bewerbungsunterlagen einfach per Mail zu. Wir laden dich zu einem Bewerbertag ein, wenn uns deine Bewerbung gefällt. Wenn du uns dort überzeugst und dein Interesse an H P E zeigst, bekommst du von uns wenig später eine Zusage. Möchtest du vielleicht noch etwas wissen?"
                                 },
                                 card = new
                                 {
@@ -644,7 +647,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Jederzeit. FÃ¼lle doch jetzt unseren Kontaktbogen aus!"
+                                    text = $"Jederzeit. Fülle doch jetzt unseren Kontaktbogen aus!"
                                 },
                                 card = new
                                 {
@@ -665,7 +668,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Es gibt Standorte Ã¼berall in Deutschland! In welchem Bundesland wohnst du?"
+                                    text = $"Es gibt Standorte überall in Deutschland! In welchem Bundesland wohnst du?"
                                 },
                                 card = new
                                 {
@@ -686,7 +689,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"In Niedersachsen haben wir einen Standort in Hannover. MÃ¶chtest du noch mehr wissen?"
+                                    text = $"In Niedersachsen haben wir einen Standort in Hannover. Möchtest du noch mehr wissen?"
                                 },
                                 card = new
                                 {
@@ -707,13 +710,13 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"In Bayern haben wir einen Standort in MÃ¼nchen und NÃ¼rnberg. MÃ¶chtest du noch mehr wissen?"
+                                    text = $"In Bayern haben wir einen Standort in München und Nürnberg. Möchtest du noch mehr wissen?"
                                 },
                                 card = new
                                 {
                                     type = "Simple",
                                     title = "HPE Duales Studium - App Edition",
-                                    content = $"Wir sind hier in MÃ¼nchen und NÃ¼rnberg vertreten."
+                                    content = $"Wir sind hier in München und Nürnberg vertreten."
                                 },
                                 shouldEndSession = false
                             }
@@ -791,13 +794,13 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"In Baden WÃ¼rttemberg haben wir einen Standort in BÃ¶blingen. Gibt es sonst noch etwas, was du mich fragen willst?"
+                                    text = $"In Baden Württemberg haben wir einen Standort in Böblingen. Gibt es sonst noch etwas, was du mich fragen willst?"
                                 },
                                 card = new
                                 {
                                     type = "Simple",
                                     title = "HPE Duales Studium - App Edition",
-                                    content = $"Dort sitzen wir in BÃ¶blingen."
+                                    content = $"Dort sitzen wir in Böblingen."
                                 },
                                 shouldEndSession = false
                             }
@@ -812,7 +815,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"In Hamburg haben wir selbstverstÃ¤ndlich auch einen Standort. Gibt es sonst noch etwas, was du mich fragen willst?"
+                                    text = $"In Hamburg haben wir selbstverständlich auch einen Standort. Gibt es sonst noch etwas, was du mich fragen willst?"
                                 },
                                 card = new
                                 {
@@ -896,7 +899,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"In Nordrhein Westfalen haben wir einen Standort in Ratingen. Hast du noch mehr Fragen fÃ¼r mich?"
+                                    text = $"In Nordrhein Westfalen haben wir einen Standort in Ratingen. Hast du noch mehr Fragen für mich?"
                                 },
                                 card = new
                                 {
@@ -1001,13 +1004,13 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"In ThÃ¼ringen haben wir leider keinen Standort. Kann ich dir sonst noch behilflich sein?"
+                                    text = $"In Thüringen haben wir leider keinen Standort. Kann ich dir sonst noch behilflich sein?"
                                 },
                                 card = new
                                 {
                                     type = "Simple",
                                     title = "HPE Duales Studium - App Edition",
-                                    content = $"In ThÃ¼ringen haben wir keinen Standort."
+                                    content = $"In Thüringen haben wir keinen Standort."
                                 },
                                 shouldEndSession = false
                             }
@@ -1022,7 +1025,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"GrÃ¼ÃŸ Gott, Willkommen bei der Alliance. Das DualStudy Universum ist riesig. Dein Studium besteht aus Theorie und Praxisteilen. MÃ¶chtest du zuerst etwas Ã¼ber die Theorie oder die Praxis erfahren?"
+                                    text = $"Grüß Gott, Willkommen bei der Alliance. Das DualStudy Universum ist riesig. Dein Studium besteht aus Theorie und Praxisteilen. Möchtest du zuerst etwas über die Theorie oder die Praxis erfahren?"
                                 },
                                 card = new
                                 {
@@ -1068,13 +1071,13 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Besonders beim dualen Studium sind die kleinen Kurse mit maximal 30 Leuten, und nicht wie in der Uni mit 400 oder mehr. AuÃŸerdem erhÃ¤lst du monatliches Gehalt und bist dadurch finanziell im Futter. Zudem bist du praxisnah unterwegs, da sich Theorie- und Praximodule alle 3 Monate abwechseln. Hast du noch eine Frage?"
+                                    text = $"Besonders beim dualen Studium sind die kleinen Kurse mit maximal 30 Leuten, und nicht wie in der Uni mit 400 oder mehr. Außerdem erhälst du monatliches Gehalt und bist dadurch finanziell im Futter. Zudem bist du praxisnah unterwegs, da sich Theorie- und Praximodule alle 3 Monate abwechseln. Hast du noch eine Frage?"
                                 },
                                 card = new
                                 {
                                     type = "Simple",
                                     title = "HPE Duales Studium - App Edition",
-                                    content = $"Kleine Kurse, Gehalt und PraxisnÃ¤he."
+                                    content = $"Kleine Kurse, Gehalt und Praxisnähe."
                                 },
                                 shouldEndSession = false
                             }
@@ -1091,7 +1094,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Besonders bei H P E ist die amerikanische Firmenkultur. Es gibt Ã¼berall Kaffeecken, du duzt deinen Chef, bekommst Weihnachts- und Urlaubsgeld und noch viel mehr. H P E ist eine groÃŸe Familie, wo jeder jeden kennt! Kann ich dir noch eine Frage beantworten?"
+                                    text = $"Besonders bei H P E ist die amerikanische Firmenkultur. Es gibt überall Kaffeecken, du duzt deinen Chef, bekommst Weihnachts- und Urlaubsgeld und noch viel mehr. H P E ist eine große Familie, wo jeder jeden kennt! Kann ich dir noch eine Frage beantworten?"
                                 },
                                 card = new
                                 {
@@ -1114,7 +1117,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Du brauchst Abitur, einen Schnitt von mindestens 2,5 und ein groÃŸes Interesse an unserem Unternehmen."
+                                    text = $"Du brauchst Abitur, einen Schnitt von mindestens 2,5 und ein großes Interesse an unserem Unternehmen."
                                 },
                                 card = new
                                 {
@@ -1137,13 +1140,13 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Am Anfang geht es eine Woche nach Ã–sterreich. Dort lernen sich alle Studenten kennen. Dann gehts ab in die Uni. AuÃŸerdem statten wir dich mit einem Laptop aus. Frage mich doch noch mehr, ich werde nicht mÃ¼de!"
+                                    text = $"Am Anfang geht es eine Woche nach Österreich. Dort lernen sich alle Studenten kennen. Dann gehts ab in die Uni. Außerdem statten wir dich mit einem Laptop aus. Frage mich doch noch mehr, ich werde nicht müde!"
                                 },
                                 card = new
                                 {
                                     type = "Simple",
                                     title = "HPE Duales Studium - App Edition",
-                                    content = $"Es geht auf eine Seminarfahrt nach Baad fÃ¼r alle Studenten."
+                                    content = $"Es geht auf eine Seminarfahrt nach Baad für alle Studenten."
                                 },
                                 shouldEndSession = false
                             }
@@ -1160,13 +1163,13 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Der Ã¤uÃŸerst geniale Entwickler, Jakob Wiemer, dieses Alexa Skills ist die absolute Mathekartoffel. Solange du fleiÃŸig bist ist alles im grÃ¼nen Bereich. Kann ich dir noch eine Frage beantworten?"
+                                    text = $"Der äußerst geniale Entwickler, Jakob Wiemer, dieses Alexa Skills ist die absolute Mathekartoffel. Solange du fleißig bist ist alles im grünen Bereich. Kann ich dir noch eine Frage beantworten?"
                                 },
                                 card = new
                                 {
                                     type = "Simple",
                                     title = "HPE Duales Studium - App Edition",
-                                    content = $"Mathe ist keine groÃŸe Sache, oder?"
+                                    content = $"Mathe ist keine große Sache, oder?"
                                 },
                                 shouldEndSession = false
                             }
@@ -1206,13 +1209,13 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Nach dem Studium kannst Du entweder das Masterprogramm machen oder wirst von uns direkt Ã¼bernommen. Bei H P E werden 99% aller dualen Studenten Ã¼bernommen! Gut zu wissen, oder? Welche Frage jetzt?"
+                                    text = $"Nach dem Studium kannst Du entweder das Masterprogramm machen oder wirst von uns direkt übernommen. Bei H P E werden 99% aller dualen Studenten übernommen! Gut zu wissen, oder? Welche Frage jetzt?"
                                 },
                                 card = new
                                 {
                                     type = "Simple",
                                     title = "HPE Duales Studium - App Edition",
-                                    content = $"Masterstudium oder Ãœbernahme bei HPE"
+                                    content = $"Masterstudium oder Übernahme bei HPE"
                                 },
                                 shouldEndSession = false
                             }
@@ -1229,7 +1232,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Das duale Studium ist ein Intensivstudium, welches dich fordern wird. Jedoch wirst du von H P E bezahlt und musst du dich nebenbei nicht um eine NebentÃ¤tigkeit kÃ¼mmern wie normale Studenten. Brauchst du noch mehr Infos?"
+                                    text = $"Das duale Studium ist ein Intensivstudium, welches dich fordern wird. Jedoch wirst du von H P E bezahlt und du musst dich nicht um eine Nebentätigkeit kümmern wie normale Studenten. Brauchst du noch mehr Infos?"
                                 },
                                 card = new
                                 {
@@ -1252,7 +1255,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Das hÃ¤ngt ganz davon ab, wie fleiÃŸig du vorher lernst. Wenn du dich gut vorbereitest sind die Klausuren kein Problem. Noch etwas, was du mich fragen willst?"
+                                    text = $"Das hängt ganz davon ab, wie fleißig du vorher lernst. Wenn du dich gut vorbereitest sind die Klausuren kein Problem. Noch etwas, was du mich fragen willst?"
                                 },
                                 card = new
                                 {
@@ -1275,7 +1278,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Momentan haben wir rund 350 Studenten. Wir fÃ¶rdern besonders das Miteinander, so geht es am Anfang des Studiums gemeinsam auf eine Seminarfahrt nach Ã–sterreich. Kann ich dir noch eine Frage abnehmen?"
+                                    text = $"Momentan haben wir rund 350 Studenten. Wir fördern besonders das Miteinander, so geht es am Anfang des Studiums gemeinsam auf eine Seminarfahrt nach Österreich. Kann ich dir noch eine Frage abnehmen?"
                                 },
                                 card = new
                                 {
@@ -1344,7 +1347,7 @@ namespace FunctionApp
                                 outputSpeech = new
                                 {
                                     type = "PlainText",
-                                    text = $"Hmmm, das habe ich nicht verstanden. Wiederhole doch deine Frage nochmal oder wende dich an den Ã¤uÃŸerst kompetenten Messemitarbeiter."
+                                    text = $"Hmmm, das habe ich nicht verstanden. Wiederhole doch deine Frage nochmal oder wende dich an den äußerst kompetenten Messemitarbeiter."
                                 },
                                 card = new
                                 {
@@ -1376,7 +1379,7 @@ namespace FunctionApp
                     outputSpeech = new
                     {
                         type = "PlainText",
-                        text = "Hmmm, das habe ich nicht verstanden. Wiederhole doch deine Frage nochmal oder wende dich an den Ã¤uÃŸerst kompetenten Messemitarbeiter."
+                        text = "Hmmm, das habe ich nicht verstanden. Wiederhole doch deine Frage nochmal oder wende dich an den äußerst kompetenten Messemitarbeiter."
                     },
                     card = new
                     {
